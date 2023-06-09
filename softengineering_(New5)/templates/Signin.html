@@ -1,0 +1,58 @@
+<html>
+
+<head>
+  <title>SignUp</title>
+  <link rel="stylesheet" href="static/FormStyle.css">
+</head>
+
+<body>
+  {% block message %}
+  {% with messages = get_flashed_messages(with_categories=true) %}
+  {% if messages %}
+  <p>{{messages[0][1]}}</p>
+  {% endif %}
+  {% endwith %}
+  {% endblock message %}
+
+  <div class="signup-wrap">
+    <div class="form-html">
+      <input id="tab" type="radio" name="tab" class="sign-up" checked><label for="tab" class="tab">Sign Up</label>
+      <div class="input-form">
+        <!-- form -->
+        <form action="{{url_for("signin_done")}}" method="get">
+          <div class="sign-up-html">
+            <!-- ID 입력 -->
+            <div class="group">
+              <label for="user" class="label">ID</label>
+              <input id="id" type="text" name="id" class="input">  
+            </div>
+            <!-- Password 입력 -->
+            <div class="group">
+              <label for="pass" class="label">Password</label>
+              <input id="pwd" type="password" name="pwd" class="input" >
+            </div>
+            <!-- Password 확인 -->
+            <div class="group">
+              <label for="pass" class="label">User Name</label>
+              <input id="name" type="text" name="name" class="input">
+            </div>
+            <!-- Email 입력 -->
+            <div class="group">
+              <label for="pass" class="label">Email Address</label>
+              <input id="email" type="email" name="email" class="input">
+            </div>
+            <!-- 회원가입 버튼 -->
+            <div class="group">
+              <input type="submit" class="button" value="Sign Up">
+            </div>
+            <div class="hr"></div>
+            <div class="foot-lnk">
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

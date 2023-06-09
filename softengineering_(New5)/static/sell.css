@@ -1,0 +1,97 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+
+header {
+  background-color: #343a40;
+  color: #fff;
+  padding: 20px;
+  height: 40px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+header h1 a{
+  text-decoration: none;
+  color: white;
+}
+
+main {
+  padding: 20px;
+}
+
+.container {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.sell-box {
+  border: none;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  background-color: #fff;
+  padding: 30px;
+}
+
+.sell-title {
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: 600;
+  color: #000000;
+}
+
+.form-group {
+  margin-bottom: 40px;
+}
+
+label {
+  font-weight: 500;
+}
+
+/* Quantuty 숫자 */
+input[type="number"],
+select.form-control {
+  width: 100%;
+  padding: 12px;
+  font-size: 14px;
+  border-radius: 5px;
+  border: 1px solid #ced4da;
+  margin-top: 15px;
+}
+
+#total-price {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* Sell now 버튼 */
+button[type="submit"].sell-button {
+  padding: 12px 24px;
+  background-color: #eb3b3b;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"].sell-button:hover {
+  background-color: #a32b2b;
+}
+
+footer {
+  background-color: #343a40;
+  color: #fff;
+  padding: 20px;
+  height: 20px;
+
+}

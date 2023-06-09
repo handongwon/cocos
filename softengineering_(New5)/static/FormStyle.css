@@ -1,0 +1,123 @@
+* {
+  box-sizing: border-box
+}
+
+/* 전체 배경 */
+body {
+  margin-top: 50;
+  color: #6a6f8c;
+  background: rgba(124, 154, 205, 0.993);
+  font: 600 16px/18px 'Open Sans', sans-serif;
+}
+
+.login-wrap {
+  width: 100%;
+  margin: auto;
+  max-width: 525px;
+  min-height: 670px;
+  position: relative;
+  background: url(https://cdn.pixabay.com/photo/2016/11/10/05/09/bitcoin-1813503_1280.jpg) no-repeat top center;
+  background-size: 1400px;
+  background-position: 50% 0%;
+  box-shadow: 0 12px 15px 0 rgba(0, 0, 0, .24), 0 17px 50px 0 rgba(0, 0, 0, .19);
+}
+
+.signup-wrap {
+  width: 100%;
+  margin: auto;
+  max-width: 525px;
+  min-height: 670px;
+  position: relative;
+  background: url(https://cdn.pixabay.com/photo/2018/04/18/14/01/blockchain-3330531_1280.jpg) no-repeat center;
+  background-size: 1000px;
+  background-position: 50% 50%;
+  box-shadow: 0 12px 15px 0 rgba(0, 0, 0, .24), 0 17px 50px 0 rgba(0, 0, 0, .19);
+}
+
+.form-html {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  padding: 90px 70px 50px 70px;
+  background: rgba(124, 154, 205, 0.9);
+}
+
+/* Radio button 없애기 */
+.form-html .log-in,
+.form-html .sign-up,
+.input-form .group .check {
+  display: none;
+}
+
+/* label, button 대문자 */
+.form-html .tab,
+.input-form .group .label,
+.input-form .group .button {
+  text-transform: uppercase;
+}
+
+/* 제목(Log in, Sign up) */
+.form-html .tab {
+  font-size: 22px;
+  margin-right: 15px;
+  padding-bottom: 5px;
+  margin: 0 15px 10px 0;
+  display: inline-block;
+  border-bottom: 2px solid transparent;
+}
+
+.form-html .log-in:checked+.tab,
+.form-html .sign-up:checked+.tab {
+  color: #fff;
+  border-color: #FCF6F5;
+}
+
+.input-form {
+  min-height: 345px;
+  position: relative;
+}
+
+.input-form .group {
+  margin-bottom: 15px;
+}
+
+/* label, input, button 스타일 */
+.input-form .group .label,
+.input-form .group .input,
+.input-form .group .button {
+  width: 100%;
+  color: #7b9acc;
+  display: block;
+  font-weight: bold;
+  font-size: small
+}
+.input-form .group .input,
+.input-form .group .button {
+  border: none;
+  padding: 15px 20px;
+  border-radius: 25px;
+  background: rgba(255, 255, 255, 0.527);
+}
+
+/* input text 글자색 */
+.input-form .group .input {
+  color: #000;
+}
+
+.input-form .group .label {
+  color: #FCF6F5;
+  font-size: 13px;
+  font-weight:lighter;
+  margin-left: 5px;
+  margin-bottom: 5px;
+}
+
+.input-form .group .button {
+  background: #FCF6F5;
+}
+
+.hr {
+  height: 2px;
+  margin: 30px 0 50px 0;
+  background: rgba(255, 255, 255, .2);
+}

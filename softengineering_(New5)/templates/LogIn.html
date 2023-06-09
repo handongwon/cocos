@@ -1,0 +1,39 @@
+<html>
+
+<head>
+  <title>LogIn</title>
+  <link rel="stylesheet" href="static/FormStyle.css">
+</head>
+
+<body>
+  <div class="login-wrap">
+    <div class="form-html">
+      <form action="{{url_for("login_done")}}" method="get">
+        <input id="tab" type="radio" name="tab" class="log-in" checked><label for="tab" class="tab">Log In</label>
+      <div class="input-form">
+        <div class="log-in-html">
+          <form method = "get" id = "login" action = {{url_for("login")}}>
+           <!-- ID 입력 -->
+           <div class="group">
+             <label for="user" class="label">ID</label>
+             <input id="id" type="id" name = "id" placeholder="ID" class="input">
+           </div>
+           <!-- Password 입력 -->
+           <div class="group">
+             <label for="pass" class="label">Password</label>
+             <input id="pwd" type="password" name="pwd" placeholder = "password" class="input" data-type="password">
+           </div>
+           <!-- 로그인 버튼-->
+           <div class="group">
+             <input type="submit" class="button" value="Log In">
+           </div>
+           <div class="hr"></div>
+          </form>
+         </div>
+      </div>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
+

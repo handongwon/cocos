@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Buy User Coin</title>
+    <link rel="stylesheet" type="text/css" href="static/userBuy.css">
+    <script src="static/userBuy.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1><a href="/">Buy Coin</a></h1>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="buy-box">
+                <div class="buy-body">
+                    <h2 class="buy-title">Buy User Coin</h2>
+                    <form action="{{url_for("userbuy_done")}}" method="get">
+                        <div class="form-group">
+                            <label for="index">Seller ID:</label>
+                            <input type="text" id="seller_id" name="seller_id"class="form-control" required>
+                            <!-- id, name:   seller_id -->
+                        </div>
+
+                        <div class="form-group">
+                            <label for="coin">Selected Coin:</label>
+                            <p id="coin" name="coin" class="form-control">Coin1</p>
+                        </div>
+
+            
+
+
+                        <button type="submit" class="buy-button">Buy Now</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer></footer>
+</body>
+
+</html>
